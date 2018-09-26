@@ -27,6 +27,10 @@ moreInfo.addEventListener('mouseenter', function(event){
   var y = event.pageY;
   console.log(x);
   tooltip.style.top = y + 'px';
-  tooltip.style.right = x + 'px'; 
+  tooltip.style.right = x + 'px';
 
+});
+
+moreInfo.addEventListener('mouseleave', function(event){
+  tooltip.style.opacity = '0';
 });
